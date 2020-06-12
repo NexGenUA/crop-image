@@ -15,7 +15,7 @@ const createCanvasElements = async (
     colorText = 'magenta',
     colorShadowText = 'black',
     solidTextColor = 'white',
-    fontStyle = 'fillText' // strokeText
+    fontStyle = 'fillText'
   }) => {
 
   if (!wordsList || !Array.isArray(wordsList) || !wordsList.length || !wordsList.every(el => typeof el === 'string')) {
