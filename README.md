@@ -27,7 +27,7 @@ createCanvasElements(otpions).then(res => {
     - `extraWidthValue`: тип `number` - диапазон[0-100] - значение, влияющее на соотношение ширины пазлов. Слова с маленьким количеством букв изначально намного меньше слов, в с бо\`льшим количеством букв. Чем выше значение, тем длина пазлов становится менее различимой, дефолтное значение `10`
     - `fontFamily`: тип `string` - задает шрифт текста, который присутствует в HTML документе, `по умолчанию 'Arial'`
     - `fontRatio`: тип `number` - увеличение/уменьшение размера шрифта относительно системного, `по умолчанию 1`
-    - `fontType`: тип `string` - принимает одно из значениё: `'bold'`, `'normal'` или '`italic'` - отвечает за тип шрифта
+    - `fontType`: тип `string` - принимает одно из значений: `'bold'`, `'normal'` или '`italic'` - отвечает за тип шрифта, по умолчанию 'bold'
     - `borderPuzzle`: тип `number` - толщина `рамки` по периметру пазла, дефолтное значение `1`
     - `shadowPuzzle`: тип `number` - толщина `размытия тени` по периметру пазла, дефолтное значение `2`
     - `borderText`: тип `number` - толщина `рамки` по периметру текста, дефолтное значение `1`
@@ -56,6 +56,17 @@ createCanvasElements({
     "People feed <b>ducks</b> at the lake.",
     "The woman <b>enjoys</b> riding her bicycle."
   ],
+  fontFamily: 'Arial',
+  fontRatio: 0.7,
+  fontType: 'bold',
+  borderPuzzle: 1,
+  shadowPuzzle: 2,
+  borderText: 1,
+  shadowText: 10,
+  colorBorder: 'rgb(255,255,250)',
+  colorShadowText: 'black',
+  solidTextColor: 'white',
+  fontStyle: 'fillText'
 }).then(res => {
   document.body.append(...res);
 })
