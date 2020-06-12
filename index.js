@@ -87,7 +87,7 @@ const createCanvasElements = async (
           const centerY = canvasHeight / 2;
           const radius = Math.round((canvasHeight / 3) / 2);
           const startXPointCropImage = widthCount- canvasWidth;
-          const fontSize = Math.round(canvasHeight / 3);
+          const fontSize = Math.round(canvasHeight / 4);
 
           ctx.canvas.width = canvasWidth + radius;
           ctx.canvas.height = canvasHeight;
